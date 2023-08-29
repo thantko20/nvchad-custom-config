@@ -22,6 +22,13 @@ local plugins = {
     end, -- Override to setup mason-lspconfig
   },
 
+  {
+    "MunifTanjim/eslint.nvim",
+    config = function()
+      require "custom.configs.eslint"
+    end,
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
