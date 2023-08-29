@@ -8,8 +8,8 @@ local sources = {
   -- webdev stuff
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   b.formatting.prettier.with {
-    filetypes = { "html", "markdown", "css" },
-    extra_args = { "--bracket-same-line", "--tab-width", "2", "--print-width", "100" },
+    filetypes = { "html", "markdown", "css", "javascriptreact", "typescriptreact" },
+    extra_args = { "--tab-width", "2", "--print-width", "80" },
   }, -- so prettier works only on these filetypes
 
   -- Lua
